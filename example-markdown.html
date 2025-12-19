@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Styling - GitHub Theme</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/github-markdown-light.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">GitHub Markdown Styling</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="card mb-4">
+        <div class="card-body markdown-body">
+          <h1>GitHub Markdown Styling</h1>
+          <p>The GitHub Theme includes the official GitHub Markdown CSS (<code>github-markdown-light.css</code>) for styling rich text content. Simply add the <code>.markdown-body</code> class to any container to apply GitHub's markdown styles.</p>
+
+          <h2>Usage</h2>
+          <pre><code>&lt;div class="markdown-body"&gt;
+  &lt;h1&gt;Your Content&lt;/h1&gt;
+  &lt;p&gt;Your markdown-styled content goes here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+          <h2>What's Included</h2>
+          <ul>
+            <li>Heading styles (H1-H6)</li>
+            <li>Paragraph and text formatting</li>
+            <li>Lists (ordered and unordered)</li>
+            <li>Tables</li>
+            <li>Code blocks and inline code</li>
+            <li>Blockquotes</li>
+            <li>Links</li>
+            <li>Horizontal rules</li>
+            <li>Images</li>
+            <li>And more...</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Typography Examples</h2>
+        <div class="card-body markdown-body">
+          <h1>Heading 1</h1>
+          <p>This is a paragraph following a heading 1. It demonstrates the default paragraph styling with proper line height and spacing.</p>
+
+          <h2>Heading 2</h2>
+          <p>Heading 2 is used for major sections and includes a subtle bottom border.</p>
+
+          <h3>Heading 3</h3>
+          <p>Heading 3 is perfect for subsections within your content.</p>
+
+          <h4>Heading 4</h4>
+          <p>Heading 4 through 6 provide additional hierarchy levels.</p>
+
+          <h5>Heading 5</h5>
+          <p>This is heading 5, slightly smaller than heading 4.</p>
+
+          <h6>Heading 6</h6>
+          <p>Heading 6 is the smallest heading size and uses a muted color.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Text Formatting</h2>
+        <div class="card-body markdown-body">
+          <p>This is <strong>bold text</strong> using the strong tag.</p>
+          <p>This is <b>bold text</b> using the b tag.</p>
+          <p>This is <em>italic text</em> using the em tag.</p>
+          <p>This is <i>italic text</i> using the i tag.</p>
+          <p>This is <del>deleted text</del> using the del tag.</p>
+          <p>This is <mark>highlighted text</mark> using the mark tag.</p>
+          <p>This is <code>inline code</code> using the code tag.</p>
+          <p>This is a <a href="#">hyperlink</a> with default GitHub styling.</p>
+          <p>Use keyboard shortcuts like <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Lists</h2>
+        <div class="card-body markdown-body">
+          <h3>Unordered List</h3>
+          <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item with <strong>bold text</strong></li>
+            <li>Fourth item with a <a href="#">link</a></li>
+            <li>Nested list:
+              <ul>
+                <li>Nested item 1</li>
+                <li>Nested item 2</li>
+                <li>Nested item 3</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Ordered List</h3>
+          <ol>
+            <li>First numbered item</li>
+            <li>Second numbered item</li>
+            <li>Third numbered item</li>
+            <li>Nested ordered list:
+              <ol>
+                <li>Nested numbered item 1</li>
+                <li>Nested numbered item 2</li>
+              </ol>
+            </li>
+          </ol>
+
+          <h3>Task List</h3>
+          <ul class="contains-task-list">
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked disabled> Completed task</li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked disabled> Another completed task</li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled> Incomplete task</li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled> Another incomplete task</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Code Examples</h2>
+        <div class="card-body markdown-body">
+          <h3>Inline Code</h3>
+          <p>You can use the <code>console.log()</code> function to output messages in JavaScript.</p>
+
+          <h3>Code Block</h3>
+          <pre><code>function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));
+console.log(greet('GitHub'));</code></pre>
+
+          <h3>HTML Code Block</h3>
+          <pre><code>&lt;div class="container"&gt;
+  &lt;h1&gt;Welcome&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Blockquotes</h2>
+        <div class="card-body markdown-body">
+          <blockquote>
+            <p>This is a simple blockquote with GitHub styling. It has a left border and muted text color.</p>
+          </blockquote>
+
+          <blockquote>
+            <p>Blockquotes can contain multiple paragraphs and other elements.</p>
+            <p>This is the second paragraph in the blockquote.</p>
+            <ul>
+              <li>They can even contain lists</li>
+              <li>And other formatted elements</li>
+            </ul>
+          </blockquote>
+
+          <blockquote>
+            <p><strong>Note:</strong> You can use formatting inside blockquotes including <em>italic</em>, <strong>bold</strong>, and <code>inline code</code>.</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Tables</h2>
+        <div class="card-body markdown-body">
+          <h3>Basic Table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Buttons</td>
+                <td>Multiple button styles and sizes</td>
+                <td><span class="badge badge-success">Ready</span></td>
+              </tr>
+              <tr>
+                <td>Grid System</td>
+                <td>12-column responsive grid</td>
+                <td><span class="badge badge-success">Ready</span></td>
+              </tr>
+              <tr>
+                <td>Components</td>
+                <td>Cards, alerts, badges, forms</td>
+                <td><span class="badge badge-success">Ready</span></td>
+              </tr>
+              <tr>
+                <td>Flexbox Utilities</td>
+                <td>Complete flexbox utility classes</td>
+                <td><span class="badge badge-success">Ready</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="mt-4">Comparison Table</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Users</th>
+                <th>Storage</th>
+                <th>Support</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Free</strong></td>
+                <td>$0/mo</td>
+                <td>1</td>
+                <td>1 GB</td>
+                <td>Community</td>
+              </tr>
+              <tr>
+                <td><strong>Pro</strong></td>
+                <td>$9/mo</td>
+                <td>5</td>
+                <td>10 GB</td>
+                <td>Email</td>
+              </tr>
+              <tr>
+                <td><strong>Business</strong></td>
+                <td>$29/mo</td>
+                <td>Unlimited</td>
+                <td>100 GB</td>
+                <td>Priority</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Horizontal Rules</h2>
+        <div class="card-body markdown-body">
+          <p>Horizontal rules can be used to separate content sections:</p>
+          <hr>
+          <p>Content after the horizontal rule.</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Mixed Content Example</h2>
+        <div class="card-body markdown-body">
+          <h1>Project Documentation</h1>
+          <p>Welcome to the project documentation. This page demonstrates how various markdown elements work together.</p>
+
+          <h2>Installation</h2>
+          <p>To install the project, run the following command:</p>
+          <pre><code>npm install github-theme</code></pre>
+
+          <h2>Features</h2>
+          <ul>
+            <li><strong>Responsive Design</strong> - Works on all devices</li>
+            <li><strong>GitHub Styling</strong> - Uses official GitHub markdown styles</li>
+            <li><strong>Easy to Use</strong> - Simple class-based approach</li>
+            <li><strong>Customizable</strong> - CSS variables for theming</li>
+          </ul>
+
+          <h2>Quick Start</h2>
+          <ol>
+            <li>Include the CSS files in your HTML</li>
+            <li>Add the <code>markdown-body</code> class to your content container</li>
+            <li>Write your content using standard HTML</li>
+            <li>Enjoy GitHub-styled content!</li>
+          </ol>
+
+          <h2>Configuration</h2>
+          <p>You can customize the theme by modifying CSS variables:</p>
+          <pre><code>:root {
+  --color-primary: #0969da;
+  --color-success: #1a7f37;
+  --color-danger: #cf222e;
+}</code></pre>
+
+          <blockquote>
+            <p><strong>Tip:</strong> Check out the <a href="#">complete documentation</a> for more advanced customization options.</p>
+          </blockquote>
+
+          <h2>Browser Support</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Browser</th>
+                <th>Version</th>
+                <th>Support</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chrome</td>
+                <td>90+</td>
+                <td><span class="badge badge-success">✓</span></td>
+              </tr>
+              <tr>
+                <td>Firefox</td>
+                <td>88+</td>
+                <td><span class="badge badge-success">✓</span></td>
+              </tr>
+              <tr>
+                <td>Safari</td>
+                <td>14+</td>
+                <td><span class="badge badge-success">✓</span></td>
+              </tr>
+              <tr>
+                <td>Edge</td>
+                <td>90+</td>
+                <td><span class="badge badge-success">✓</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr>
+
+          <h2>License</h2>
+          <p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

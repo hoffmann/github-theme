@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Utilities - GitHub Theme</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/github-markdown-light.css">
+  <style>
+    /* Demo-specific styles */
+    .demo-box {
+      padding: 16px;
+      background-color: #0969da;
+      color: white;
+      border-radius: 6px;
+      margin: 4px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .demo-box-secondary {
+      background-color: #6639ba;
+    }
+    .demo-box-success {
+      background-color: #1a7f37;
+    }
+    .demo-container {
+      border: 2px dashed #d1d9e0;
+      padding: 8px;
+      min-height: 100px;
+      background-color: #f6f8fa;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .demo-container-tall {
+      min-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Flexbox Utilities Documentation</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Introduction -->
+      <div class="card mb-4">
+        <div class="card-body markdown-body">
+          <h1>Flexbox Utilities</h1>
+          <p>This page demonstrates all available flexbox utility classes in the GitHub Theme. Flexbox is a powerful layout tool that makes it easy to align and distribute elements in containers.</p>
+
+          <h2>Available Utility Classes</h2>
+          <ul>
+            <li><code>.d-flex</code> - Enables flexbox layout on a container</li>
+            <li><code>.flex-row</code> - Sets flex direction to row (default, horizontal)</li>
+            <li><code>.flex-column</code> - Sets flex direction to column (vertical)</li>
+            <li><code>.justify-content-*</code> - Controls horizontal alignment (main axis)</li>
+            <li><code>.align-items-*</code> - Controls vertical alignment (cross axis)</li>
+          </ul>
+
+          <h3>How to Use</h3>
+          <p>Simply add the <code>.d-flex</code> class to any container, then combine it with other utility classes to control layout:</p>
+          <pre><code>&lt;div class="d-flex justify-content-center align-items-center"&gt;
+  &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+  &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- Basic Flexbox -->
+      <div class="card mb-4">
+        <h2 class="card-header">Basic Flexbox Container</h2>
+        <div class="card-body">
+          <h3>Without Flexbox (default block layout)</h3>
+          <div class="demo-container">
+            <div class="demo-box">Item 1</div>
+            <div class="demo-box">Item 2</div>
+            <div class="demo-box">Item 3</div>
+          </div>
+          <p class="text-muted">Elements stack vertically by default.</p>
+
+          <h3 class="mt-4">With Flexbox (<code>.d-flex</code>)</h3>
+          <div class="demo-container d-flex">
+            <div class="demo-box">Item 1</div>
+            <div class="demo-box">Item 2</div>
+            <div class="demo-box">Item 3</div>
+          </div>
+          <p class="text-muted">Elements are placed side by side in a row.</p>
+        </div>
+      </div>
+
+      <!-- Flex Direction -->
+      <div class="card mb-4">
+        <h2 class="card-header">Flex Direction</h2>
+        <div class="card-body markdown-body">
+          <p>Control the direction of flex items with <code>.flex-row</code> (default) or <code>.flex-column</code>.</p>
+
+          <h3>Row Direction (<code>.d-flex .flex-row</code>)</h3>
+          <div class="demo-container d-flex flex-row">
+            <div class="demo-box">First</div>
+            <div class="demo-box">Second</div>
+            <div class="demo-box">Third</div>
+          </div>
+          <p class="text-muted">Items flow horizontally from left to right.</p>
+
+          <h3 class="mt-4">Column Direction (<code>.d-flex .flex-column</code>)</h3>
+          <div class="demo-container d-flex flex-column">
+            <div class="demo-box">First</div>
+            <div class="demo-box">Second</div>
+            <div class="demo-box">Third</div>
+          </div>
+          <p class="text-muted">Items flow vertically from top to bottom.</p>
+        </div>
+      </div>
+
+      <!-- Justify Content -->
+      <div class="card mb-4">
+        <h2 class="card-header">Justify Content (Main Axis Alignment)</h2>
+        <div class="card-body markdown-body">
+          <p>The <code>justify-content</code> utilities control how items are distributed along the main axis (horizontal for row, vertical for column).</p>
+
+          <h3>Start (<code>.justify-content-start</code>)</h3>
+          <div class="demo-container d-flex justify-content-start">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are packed at the start of the container (default).</p>
+
+          <h3 class="mt-3">End (<code>.justify-content-end</code>)</h3>
+          <div class="demo-container d-flex justify-content-end">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are packed at the end of the container.</p>
+
+          <h3 class="mt-3">Center (<code>.justify-content-center</code>)</h3>
+          <div class="demo-container d-flex justify-content-center">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are centered in the container.</p>
+
+          <h3 class="mt-3">Space Between (<code>.justify-content-between</code>)</h3>
+          <div class="demo-container d-flex justify-content-between">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are evenly distributed with space between them. First item at start, last item at end.</p>
+
+          <h3 class="mt-3">Space Around (<code>.justify-content-around</code>)</h3>
+          <div class="demo-container d-flex justify-content-around">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are evenly distributed with equal space around them.</p>
+        </div>
+      </div>
+
+      <!-- Align Items -->
+      <div class="card mb-4">
+        <h2 class="card-header">Align Items (Cross Axis Alignment)</h2>
+        <div class="card-body markdown-body">
+          <p>The <code>align-items</code> utilities control how items are aligned along the cross axis (vertical for row, horizontal for column).</p>
+
+          <h3>Start (<code>.align-items-start</code>)</h3>
+          <div class="demo-container demo-container-tall d-flex align-items-start">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are aligned at the start of the cross axis (top).</p>
+
+          <h3 class="mt-3">End (<code>.align-items-end</code>)</h3>
+          <div class="demo-container demo-container-tall d-flex align-items-end">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are aligned at the end of the cross axis (bottom).</p>
+
+          <h3 class="mt-3">Center (<code>.align-items-center</code>)</h3>
+          <div class="demo-container demo-container-tall d-flex align-items-center">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items are centered along the cross axis (vertically centered).</p>
+
+          <h3 class="mt-3">Baseline (<code>.align-items-baseline</code>)</h3>
+          <div class="demo-container demo-container-tall d-flex align-items-baseline">
+            <div class="demo-box" style="font-size: 24px;">1</div>
+            <div class="demo-box" style="font-size: 16px;">2</div>
+            <div class="demo-box" style="font-size: 20px;">3</div>
+          </div>
+          <p class="text-muted">Items are aligned by their text baseline (notice different font sizes align).</p>
+
+          <h3 class="mt-3">Stretch (<code>.align-items-stretch</code>)</h3>
+          <div class="demo-container demo-container-tall d-flex align-items-stretch">
+            <div class="demo-box">1</div>
+            <div class="demo-box">2</div>
+            <div class="demo-box">3</div>
+          </div>
+          <p class="text-muted">Items stretch to fill the container height (default behavior).</p>
+        </div>
+      </div>
+
+      <!-- Combining Utilities -->
+      <div class="card mb-4">
+        <h2 class="card-header">Combining Utilities</h2>
+        <div class="card-body markdown-body">
+          <p>You can combine multiple flexbox utilities to achieve complex layouts.</p>
+
+          <h3>Centered Content (<code>.d-flex .justify-content-center .align-items-center</code>)</h3>
+          <div class="demo-container demo-container-tall d-flex justify-content-center align-items-center">
+            <div class="demo-box">Perfectly Centered!</div>
+          </div>
+          <p class="text-muted">This is the most common use case - centering content both horizontally and vertically.</p>
+
+          <h3 class="mt-3">Space Between with Center Alignment (<code>.d-flex .justify-content-between .align-items-center</code>)</h3>
+          <div class="demo-container demo-container-tall d-flex justify-content-between align-items-center">
+            <div class="demo-box">Left</div>
+            <div class="demo-box">Center</div>
+            <div class="demo-box">Right</div>
+          </div>
+          <p class="text-muted">Great for navigation bars or headers with items distributed across.</p>
+        </div>
+      </div>
+
+      <!-- Practical Examples -->
+      <div class="card mb-4">
+        <h2 class="card-header">Practical Examples</h2>
+        <div class="card-body">
+
+          <h3>Navigation Bar</h3>
+          <div class="card">
+            <div class="d-flex justify-content-between align-items-center" style="padding: 16px;">
+              <h3 style="margin: 0;">Logo</h3>
+              <div class="d-flex" style="gap: 16px;">
+                <button class="btn btn-secondary btn-sm">Home</button>
+                <button class="btn btn-secondary btn-sm">About</button>
+                <button class="btn btn-secondary btn-sm">Contact</button>
+              </div>
+              <button class="btn btn-primary btn-sm">Sign In</button>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Profile Card</h3>
+          <div class="card">
+            <div class="d-flex align-items-center" style="padding: 16px;">
+              <div class="demo-box" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 16px;">
+                User
+              </div>
+              <div style="flex: 1;">
+                <h4 style="margin: 0 0 4px 0;">John Doe</h4>
+                <p class="text-muted" style="margin: 0;">Software Engineer</p>
+              </div>
+              <button class="btn btn-outline btn-sm">Follow</button>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Card Footer with Actions</h3>
+          <div class="card">
+            <div class="card-body">
+              <h4>Article Title</h4>
+              <p>This is a sample article with some content that demonstrates a card layout.</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center" style="padding: 16px; border-top: 1px solid #d1d9e0;">
+              <span class="text-muted">Posted 2 hours ago</span>
+              <div>
+                <button class="btn btn-secondary btn-sm">Share</button>
+                <button class="btn btn-primary btn-sm">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Vertical List with Column Direction</h3>
+          <div class="card">
+            <div class="d-flex flex-column" style="padding: 16px; gap: 8px;">
+              <div class="d-flex justify-content-between align-items-center alert alert-secondary mb-0">
+                <span>Task 1: Update documentation</span>
+                <span class="badge badge-success">Complete</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center alert alert-secondary mb-0">
+                <span>Task 2: Review pull requests</span>
+                <span class="badge badge-primary">In Progress</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center alert alert-secondary mb-0">
+                <span>Task 3: Deploy to production</span>
+                <span class="badge badge-secondary">Pending</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Button Group</h3>
+          <div class="d-flex justify-content-center" style="gap: 8px;">
+            <button class="btn btn-secondary">Previous</button>
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-secondary">2</button>
+            <button class="btn btn-secondary">3</button>
+            <button class="btn btn-secondary">Next</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Quick Reference -->
+      <div class="card mb-4">
+        <h2 class="card-header">Quick Reference</h2>
+        <div class="card-body markdown-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Property</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.d-flex</code></td>
+                <td><code>display: flex</code></td>
+                <td>Enables flexbox layout</td>
+              </tr>
+              <tr>
+                <td><code>.flex-row</code></td>
+                <td><code>flex-direction: row</code></td>
+                <td>Items flow horizontally (default)</td>
+              </tr>
+              <tr>
+                <td><code>.flex-column</code></td>
+                <td><code>flex-direction: column</code></td>
+                <td>Items flow vertically</td>
+              </tr>
+              <tr>
+                <td><code>.justify-content-start</code></td>
+                <td><code>justify-content: flex-start</code></td>
+                <td>Pack items at the start</td>
+              </tr>
+              <tr>
+                <td><code>.justify-content-end</code></td>
+                <td><code>justify-content: flex-end</code></td>
+                <td>Pack items at the end</td>
+              </tr>
+              <tr>
+                <td><code>.justify-content-center</code></td>
+                <td><code>justify-content: center</code></td>
+                <td>Center items</td>
+              </tr>
+              <tr>
+                <td><code>.justify-content-between</code></td>
+                <td><code>justify-content: space-between</code></td>
+                <td>Distribute items with space between</td>
+              </tr>
+              <tr>
+                <td><code>.justify-content-around</code></td>
+                <td><code>justify-content: space-around</code></td>
+                <td>Distribute items with space around</td>
+              </tr>
+              <tr>
+                <td><code>.align-items-start</code></td>
+                <td><code>align-items: flex-start</code></td>
+                <td>Align items at the start</td>
+              </tr>
+              <tr>
+                <td><code>.align-items-end</code></td>
+                <td><code>align-items: flex-end</code></td>
+                <td>Align items at the end</td>
+              </tr>
+              <tr>
+                <td><code>.align-items-center</code></td>
+                <td><code>align-items: center</code></td>
+                <td>Center align items</td>
+              </tr>
+              <tr>
+                <td><code>.align-items-baseline</code></td>
+                <td><code>align-items: baseline</code></td>
+                <td>Align items by baseline</td>
+              </tr>
+              <tr>
+                <td><code>.align-items-stretch</code></td>
+                <td><code>align-items: stretch</code></td>
+                <td>Stretch items to fill container</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="mt-4">Tips</h3>
+          <ul>
+            <li><strong>Main Axis vs Cross Axis:</strong> In <code>flex-row</code>, main axis is horizontal and cross axis is vertical. In <code>flex-column</code>, they are reversed.</li>
+            <li><strong>justify-content:</strong> Controls spacing along the main axis (horizontal in row, vertical in column).</li>
+            <li><strong>align-items:</strong> Controls alignment along the cross axis (vertical in row, horizontal in column).</li>
+            <li><strong>Combining Classes:</strong> You can combine any justify and align classes together for precise control.</li>
+            <li><strong>Responsive:</strong> While not shown here, you can combine these with responsive utilities like <code>.d-sm-flex</code>, <code>.d-md-flex</code>, etc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Back to Main -->
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-primary">Back to Main Demo</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

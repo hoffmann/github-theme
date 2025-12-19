@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation - GitHub Theme</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/github-markdown-light.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Navigation Components</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="card mb-4">
+        <div class="card-body markdown-body">
+          <h1>Navigation Components</h1>
+          <p>Navigation components help users move through your application. The GitHub Theme provides clean, accessible navigation styles.</p>
+
+          <h2>Available Classes</h2>
+          <ul>
+            <li><code>.nav</code> - Base navigation container</li>
+            <li><code>.nav-item</code> - Individual navigation item</li>
+            <li><code>.nav-link</code> - Navigation link styling</li>
+            <li><code>.nav-link.active</code> - Active/current page indicator</li>
+          </ul>
+
+          <h2>Usage</h2>
+          <pre><code>&lt;ul class="nav"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a href="#" class="nav-link active"&gt;Home&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a href="#" class="nav-link"&gt;About&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Basic Navigation</h2>
+        <div class="card-body">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Navigation with Badges</h2>
+        <div class="card-body">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                All <span class="badge badge-secondary" style="margin-left: 4px;">24</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Active <span class="badge badge-success" style="margin-left: 4px;">12</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Pending <span class="badge badge-primary" style="margin-left: 4px;">8</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Closed <span class="badge badge-secondary" style="margin-left: 4px;">4</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Header Navigation</h2>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center" style="padding: 16px; background-color: #1f2328; border-radius: 6px;">
+            <h3 style="margin: 0; color: white;">Brand Logo</h3>
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="color: rgba(255,255,255,0.7);">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="color: rgba(255,255,255,0.7);">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="color: rgba(255,255,255,0.7);">Contact</a>
+              </li>
+            </ul>
+            <button class="btn btn-primary btn-sm">Sign In</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Tabbed Navigation</h2>
+        <div class="card-body">
+          <ul class="nav" style="border-bottom: 2px solid #d1d9e0; margin-bottom: 16px;">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" style="border-bottom: 2px solid #0969da; margin-bottom: -2px;">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Repositories</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Packages</a>
+            </li>
+          </ul>
+          <div style="padding: 16px;">
+            <h4>Overview Content</h4>
+            <p>This is the content for the Overview tab.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Sidebar Navigation</h2>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <nav style="background-color: #f6f8fa; padding: 16px; border-radius: 6px;">
+                <h4 style="margin-top: 0;">Menu</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="margin-bottom: 8px;">
+                    <a href="#" class="nav-link active" style="display: block; padding: 8px; margin: 0;">Dashboard</a>
+                  </li>
+                  <li style="margin-bottom: 8px;">
+                    <a href="#" class="nav-link" style="display: block; padding: 8px; margin: 0;">Profile</a>
+                  </li>
+                  <li style="margin-bottom: 8px;">
+                    <a href="#" class="nav-link" style="display: block; padding: 8px; margin: 0;">Settings</a>
+                  </li>
+                  <li style="margin-bottom: 8px;">
+                    <a href="#" class="nav-link" style="display: block; padding: 8px; margin: 0;">Help</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12 col-md-9">
+              <div style="padding: 16px;">
+                <h3>Dashboard</h3>
+                <p>This is your main dashboard content area. The sidebar navigation allows users to switch between different sections.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Breadcrumb Navigation</h2>
+        <div class="card-body">
+          <nav>
+            <ul class="d-flex" style="list-style: none; padding: 0; margin: 0; gap: 8px; align-items: center;">
+              <li><a href="#" style="color: #0969da; text-decoration: none;">Home</a></li>
+              <li style="color: #59636e;">/</li>
+              <li><a href="#" style="color: #0969da; text-decoration: none;">Products</a></li>
+              <li style="color: #59636e;">/</li>
+              <li><a href="#" style="color: #0969da; text-decoration: none;">Category</a></li>
+              <li style="color: #59636e;">/</li>
+              <li style="color: #59636e;">Current Page</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Pagination</h2>
+        <div class="card-body">
+          <div class="d-flex justify-content-center" style="gap: 4px;">
+            <button class="btn btn-secondary btn-sm">Previous</button>
+            <button class="btn btn-primary btn-sm">1</button>
+            <button class="btn btn-secondary btn-sm">2</button>
+            <button class="btn btn-secondary btn-sm">3</button>
+            <button class="btn btn-secondary btn-sm">4</button>
+            <button class="btn btn-secondary btn-sm">5</button>
+            <button class="btn btn-secondary btn-sm">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Vertical Navigation</h2>
+        <div class="card-body">
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li class="d-flex justify-content-between align-items-center" style="padding: 12px; border-bottom: 1px solid #d1d9e0; background-color: #f6f8fa;">
+              <a href="#" style="color: #1f2328; text-decoration: none; font-weight: 600;">Dashboard</a>
+              <span class="badge badge-primary">Active</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center" style="padding: 12px; border-bottom: 1px solid #d1d9e0;">
+              <a href="#" style="color: #1f2328; text-decoration: none;">Analytics</a>
+              <span style="color: #59636e;">&gt;</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center" style="padding: 12px; border-bottom: 1px solid #d1d9e0;">
+              <a href="#" style="color: #1f2328; text-decoration: none;">Reports</a>
+              <span style="color: #59636e;">&gt;</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center" style="padding: 12px; border-bottom: 1px solid #d1d9e0;">
+              <a href="#" style="color: #1f2328; text-decoration: none;">Settings</a>
+              <span style="color: #59636e;">&gt;</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Footer Navigation</h2>
+        <div class="card-body">
+          <footer style="background-color: #1f2328; color: white; padding: 32px; border-radius: 6px;">
+            <div class="row">
+              <div class="col-12 col-md-3 mb-3">
+                <h4 style="color: white;">Product</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Features</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Pricing</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Security</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <h4 style="color: white;">Company</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">About</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Blog</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Careers</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <h4 style="color: white;">Resources</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Documentation</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">API</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Support</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <h4 style="color: white;">Legal</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Privacy</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Terms</a></li>
+                  <li style="margin-bottom: 8px;"><a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">License</a></li>
+                </ul>
+              </div>
+            </div>
+            <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: rgba(255,255,255,0.7);">
+              &copy; 2024 Your Company. All rights reserved.
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

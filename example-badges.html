@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badges - GitHub Theme</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/github-markdown-light.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Badge Components</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="card mb-4">
+        <div class="card-body markdown-body">
+          <h1>Badge Components</h1>
+          <p>Badges are small count and labeling components. They're perfect for displaying status, counts, categories, and labels.</p>
+
+          <h2>Available Classes</h2>
+          <ul>
+            <li><code>.badge</code> - Base badge class (required)</li>
+            <li><code>.badge-primary</code> - Primary blue badge</li>
+            <li><code>.badge-success</code> - Success green badge</li>
+            <li><code>.badge-danger</code> - Danger red badge</li>
+            <li><code>.badge-secondary</code> - Secondary gray badge</li>
+          </ul>
+
+          <h2>Usage</h2>
+          <pre><code>&lt;span class="badge badge-primary"&gt;New&lt;/span&gt;
+&lt;span class="badge badge-success"&gt;Active&lt;/span&gt;
+&lt;span class="badge badge-danger"&gt;5&lt;/span&gt;</code></pre>
+
+          <h2>Use Cases</h2>
+          <ul>
+            <li>Status indicators (Active, Inactive, Pending)</li>
+            <li>Notification counts</li>
+            <li>Category labels</li>
+            <li>Version numbers</li>
+            <li>Feature tags</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Badge Variants</h2>
+        <div class="card-body">
+          <p class="text-muted mb-3">Different badge colors for different purposes.</p>
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-secondary">Secondary</span>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Status Badges</h2>
+        <div class="card-body">
+          <p>
+            Status: <span class="badge badge-primary">Active</span>
+          </p>
+          <p>
+            Verification: <span class="badge badge-success">Verified</span>
+          </p>
+          <p>
+            Priority: <span class="badge badge-danger">Critical</span>
+          </p>
+          <p>
+            Version: <span class="badge badge-secondary">Beta</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Badges with Text</h2>
+        <div class="card-body">
+          <h3>Notification Count</h3>
+          <p>
+            Messages <span class="badge badge-danger">5</span>
+          </p>
+          <p>
+            Notifications <span class="badge badge-primary">12</span>
+          </p>
+          <p>
+            Updates <span class="badge badge-success">3</span>
+          </p>
+
+          <h3 class="mt-4">Labels and Tags</h3>
+          <p>
+            <span class="badge badge-primary">HTML</span>
+            <span class="badge badge-primary">CSS</span>
+            <span class="badge badge-primary">JavaScript</span>
+            <span class="badge badge-secondary">GitHub</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Badges in Lists</h2>
+        <div class="card-body">
+          <ul style="list-style: none; padding: 0;">
+            <li class="d-flex justify-content-between align-items-center" style="padding: 8px 0; border-bottom: 1px solid #d1d9e0;">
+              <span>Dashboard</span>
+              <span class="badge badge-primary">New</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center" style="padding: 8px 0; border-bottom: 1px solid #d1d9e0;">
+              <span>User Management</span>
+              <span class="badge badge-success">Active</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center" style="padding: 8px 0; border-bottom: 1px solid #d1d9e0;">
+              <span>Settings</span>
+              <span class="badge badge-secondary">Coming Soon</span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center" style="padding: 8px 0;">
+              <span>Reports</span>
+              <span class="badge badge-danger">Beta</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Badges in Tables</h2>
+        <div class="card-body markdown-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>User Authentication</td>
+                <td>Login and registration system</td>
+                <td><span class="badge badge-success">Ready</span></td>
+              </tr>
+              <tr>
+                <td>Payment Integration</td>
+                <td>Stripe payment processing</td>
+                <td><span class="badge badge-primary">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Email Notifications</td>
+                <td>Automated email system</td>
+                <td><span class="badge badge-secondary">Planned</span></td>
+              </tr>
+              <tr>
+                <td>API Documentation</td>
+                <td>REST API reference</td>
+                <td><span class="badge badge-danger">Urgent</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Badges with Buttons</h2>
+        <div class="card-body">
+          <button class="btn btn-primary">
+            Inbox <span class="badge badge-secondary" style="background-color: rgba(255,255,255,0.3); margin-left: 4px;">9</span>
+          </button>
+          <button class="btn btn-secondary">
+            Notifications <span class="badge badge-danger" style="margin-left: 4px;">5</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Practical Examples</h2>
+        <div class="card-body">
+          <h3>Product Cards</h3>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4>Premium Plan</h4>
+                    <span class="badge badge-success">Popular</span>
+                  </div>
+                  <p class="text-muted">$29/month</p>
+                  <button class="btn btn-primary btn-block">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4>Enterprise</h4>
+                    <span class="badge badge-primary">New</span>
+                  </div>
+                  <p class="text-muted">$99/month</p>
+                  <button class="btn btn-primary btn-block">Select Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4>Basic Plan</h4>
+                    <span class="badge badge-secondary">Free</span>
+                  </div>
+                  <p class="text-muted">$0/month</p>
+                  <button class="btn btn-primary btn-block">Select Plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Navigation with Counts</h3>
+          <div class="card">
+            <div class="card-body">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">
+                    All <span class="badge badge-secondary" style="margin-left: 4px;">24</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Active <span class="badge badge-success" style="margin-left: 4px;">12</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Pending <span class="badge badge-primary" style="margin-left: 4px;">8</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    Closed <span class="badge badge-secondary" style="margin-left: 4px;">4</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Issue Tracker</h3>
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3" style="padding-bottom: 12px; border-bottom: 1px solid #d1d9e0;">
+                <div>
+                  <h4 style="margin: 0;">#123 - Unable to login</h4>
+                  <p class="text-muted" style="margin: 4px 0 0 0; font-size: 14px;">Opened 2 hours ago by user123</p>
+                </div>
+                <div>
+                  <span class="badge badge-danger">Bug</span>
+                  <span class="badge badge-primary">High Priority</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center" style="padding-bottom: 12px; border-bottom: 1px solid #d1d9e0;">
+                <div>
+                  <h4 style="margin: 0;">#122 - Add dark mode</h4>
+                  <p class="text-muted" style="margin: 4px 0 0 0; font-size: 14px;">Opened yesterday by designer</p>
+                </div>
+                <div>
+                  <span class="badge badge-success">Enhancement</span>
+                  <span class="badge badge-secondary">Medium</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

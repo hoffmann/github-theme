@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utility Classes - GitHub Theme</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/github-markdown-light.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Utility Classes</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="card mb-4">
+        <div class="card-body markdown-body">
+          <h1>Utility Classes</h1>
+          <p>Utility classes provide quick, single-purpose styling options that can be applied directly to elements. They're perfect for fine-tuning layouts without writing custom CSS.</p>
+
+          <h2>Categories</h2>
+          <ul>
+            <li><strong>Spacing</strong> - Margin and padding utilities</li>
+            <li><strong>Text</strong> - Alignment and color utilities</li>
+            <li><strong>Display</strong> - Control element display properties</li>
+            <li><strong>Flexbox</strong> - Flexbox layout utilities (see <a href="example-flexbox.html">Flexbox Examples</a>)</li>
+          </ul>
+
+          <h2>Spacing Scale</h2>
+          <p>All spacing utilities use an 8px base unit:</p>
+          <ul>
+            <li><code>*-0</code> = 0px</li>
+            <li><code>*-1</code> = 8px</li>
+            <li><code>*-2</code> = 16px</li>
+            <li><code>*-3</code> = 24px</li>
+            <li><code>*-4</code> = 32px</li>
+            <li><code>*-5</code> = 40px</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Margin Utilities</h2>
+        <div class="card-body">
+          <h3>Margin Top</h3>
+          <div class="alert alert-secondary mt-0">mt-0 (no top margin)</div>
+          <div class="alert alert-secondary mt-1">mt-1 (8px top margin)</div>
+          <div class="alert alert-secondary mt-2">mt-2 (16px top margin)</div>
+          <div class="alert alert-secondary mt-3">mt-3 (24px top margin)</div>
+          <div class="alert alert-secondary mt-4">mt-4 (32px top margin)</div>
+          <div class="alert alert-secondary mt-5">mt-5 (40px top margin)</div>
+
+          <h3 class="mt-4">Margin Bottom</h3>
+          <div class="alert alert-secondary mb-0">mb-0 (no bottom margin)</div>
+          <div class="alert alert-secondary mb-1">mb-1 (8px bottom margin)</div>
+          <div class="alert alert-secondary mb-2">mb-2 (16px bottom margin)</div>
+          <div class="alert alert-secondary mb-3">mb-3 (24px bottom margin)</div>
+          <div class="alert alert-secondary mb-4">mb-4 (32px bottom margin)</div>
+          <div class="alert alert-secondary mb-5">mb-5 (40px bottom margin)</div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Padding Utilities</h2>
+        <div class="card-body">
+          <h3>Padding Top</h3>
+          <div class="alert alert-secondary pt-0">pt-0 (no top padding)</div>
+          <div class="alert alert-secondary pt-1">pt-1 (8px top padding)</div>
+          <div class="alert alert-secondary pt-2">pt-2 (16px top padding)</div>
+          <div class="alert alert-secondary pt-3">pt-3 (24px top padding)</div>
+          <div class="alert alert-secondary pt-4">pt-4 (32px top padding)</div>
+
+          <h3 class="mt-4">Padding Bottom</h3>
+          <div class="alert alert-secondary pb-0">pb-0 (no bottom padding)</div>
+          <div class="alert alert-secondary pb-1">pb-1 (8px bottom padding)</div>
+          <div class="alert alert-secondary pb-2">pb-2 (16px bottom padding)</div>
+          <div class="alert alert-secondary pb-3">pb-3 (24px bottom padding)</div>
+          <div class="alert alert-secondary pb-4">pb-4 (32px bottom padding)</div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Text Alignment</h2>
+        <div class="card-body">
+          <p class="text-left">Left aligned text (.text-left)</p>
+          <p class="text-center">Center aligned text (.text-center)</p>
+          <p class="text-right">Right aligned text (.text-right)</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Text Colors</h2>
+        <div class="card-body">
+          <p class="text-muted">Muted text color (.text-muted) - used for secondary information</p>
+          <p class="text-primary">Primary text color (.text-primary) - matches primary button color</p>
+          <p class="text-success">Success text color (.text-success) - indicates success or positive actions</p>
+          <p class="text-danger">Danger text color (.text-danger) - indicates errors or warnings</p>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Display Utilities</h2>
+        <div class="card-body markdown-body">
+          <h3>Basic Display</h3>
+          <div class="mb-3">
+            <div class="d-none" style="background-color: #f6f8fa; padding: 8px; margin-bottom: 8px;">This is hidden (.d-none)</div>
+            <div class="d-block" style="background-color: #f6f8fa; padding: 8px; margin-bottom: 8px;">Block display (.d-block)</div>
+            <div class="d-inline" style="background-color: #f6f8fa; padding: 8px;">Inline display (.d-inline)</div>
+            <div class="d-inline" style="background-color: #ddf4ff; padding: 8px;">Another inline (.d-inline)</div>
+            <div class="d-inline-block" style="background-color: #f6f8fa; padding: 8px; margin-top: 8px;">Inline-block display (.d-inline-block)</div>
+            <div class="d-flex" style="background-color: #f6f8fa; padding: 8px; margin-top: 8px; gap: 8px;">
+              <div style="background-color: white; padding: 8px;">Flex item 1</div>
+              <div style="background-color: white; padding: 8px;">Flex item 2</div>
+            </div>
+          </div>
+
+          <h3>Responsive Display</h3>
+          <p>Display utilities can be combined with responsive breakpoints:</p>
+          <ul>
+            <li><code>.d-sm-*</code> - Applies at 576px and up</li>
+            <li><code>.d-md-*</code> - Applies at 768px and up</li>
+            <li><code>.d-lg-*</code> - Applies at 1024px and up</li>
+          </ul>
+          <div class="alert alert-info">
+            <strong>Example:</strong> <code>.d-none .d-md-block</code> hides on mobile, shows on tablet and up.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Flexbox Quick Reference</h2>
+        <div class="card-body markdown-body">
+          <p>For detailed flexbox examples, see the <a href="example-flexbox.html">Flexbox Utilities documentation</a>.</p>
+
+          <h3>Justify Content</h3>
+          <div class="mb-3">
+            <div class="d-flex justify-content-start" style="background-color: #f6f8fa; padding: 8px; margin-bottom: 8px; gap: 4px;">
+              <div style="background-color: #0969da; color: white; padding: 8px;">1</div>
+              <div style="background-color: #0969da; color: white; padding: 8px;">2</div>
+              <div style="background-color: #0969da; color: white; padding: 8px;">3</div>
+            </div>
+            <code>.justify-content-start</code>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-center" style="background-color: #f6f8fa; padding: 8px; margin-bottom: 8px; gap: 4px;">
+              <div style="background-color: #0969da; color: white; padding: 8px;">1</div>
+              <div style="background-color: #0969da; color: white; padding: 8px;">2</div>
+              <div style="background-color: #0969da; color: white; padding: 8px;">3</div>
+            </div>
+            <code>.justify-content-center</code>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between" style="background-color: #f6f8fa; padding: 8px; margin-bottom: 8px; gap: 4px;">
+              <div style="background-color: #0969da; color: white; padding: 8px;">1</div>
+              <div style="background-color: #0969da; color: white; padding: 8px;">2</div>
+              <div style="background-color: #0969da; color: white; padding: 8px;">3</div>
+            </div>
+            <code>.justify-content-between</code>
+          </div>
+
+          <h3>Align Items</h3>
+          <div class="mb-3">
+            <div class="d-flex align-items-center" style="background-color: #f6f8fa; padding: 8px; margin-bottom: 8px; gap: 4px; height: 100px;">
+              <div style="background-color: #0969da; color: white; padding: 8px;">Centered</div>
+              <div style="background-color: #0969da; color: white; padding: 8px;">Items</div>
+            </div>
+            <code>.align-items-center</code>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Practical Examples</h2>
+        <div class="card-body">
+          <h3>Card with Spacing</h3>
+          <div class="card mb-3 mt-3">
+            <div class="card-body">
+              <h4 class="mt-0 mb-2">Card Title</h4>
+              <p class="mb-3">This card uses utility classes for precise spacing control.</p>
+              <button class="btn btn-primary">Action</button>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Centered Content</h3>
+          <div class="text-center mt-3 mb-3">
+            <h4>Welcome</h4>
+            <p class="text-muted">This content is centered using utility classes</p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+
+          <h3 class="mt-4">Status Message</h3>
+          <div class="d-flex justify-content-between align-items-center alert alert-success">
+            <div>
+              <strong>Success!</strong> Your changes have been saved.
+            </div>
+            <button class="btn btn-success btn-sm">Dismiss</button>
+          </div>
+
+          <h3 class="mt-4">Stat Cards</h3>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <div class="card-body pt-4 pb-4">
+                  <h2 class="text-primary mb-1 mt-0">1,234</h2>
+                  <p class="text-muted mb-0">Total Users</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <div class="card-body pt-4 pb-4">
+                  <h2 class="text-success mb-1 mt-0">5,678</h2>
+                  <p class="text-muted mb-0">Active Sessions</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <div class="card-body pt-4 pb-4">
+                  <h2 class="text-danger mb-1 mt-0">42</h2>
+                  <p class="text-muted mb-0">Issues</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Complete Reference</h2>
+        <div class="card-body markdown-body">
+          <h3>Spacing Classes</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Class Pattern</th>
+                <th>Property</th>
+                <th>Values</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.mt-*</code></td>
+                <td>margin-top</td>
+                <td>0, 1 (8px), 2 (16px), 3 (24px), 4 (32px), 5 (40px)</td>
+              </tr>
+              <tr>
+                <td><code>.mb-*</code></td>
+                <td>margin-bottom</td>
+                <td>0, 1 (8px), 2 (16px), 3 (24px), 4 (32px), 5 (40px)</td>
+              </tr>
+              <tr>
+                <td><code>.pt-*</code></td>
+                <td>padding-top</td>
+                <td>0, 1 (8px), 2 (16px), 3 (24px), 4 (32px), 5 (40px)</td>
+              </tr>
+              <tr>
+                <td><code>.pb-*</code></td>
+                <td>padding-bottom</td>
+                <td>0, 1 (8px), 2 (16px), 3 (24px), 4 (32px), 5 (40px)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="mt-4">Text Utilities</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.text-left</code></td>
+                <td>Align text to the left</td>
+              </tr>
+              <tr>
+                <td><code>.text-center</code></td>
+                <td>Center align text</td>
+              </tr>
+              <tr>
+                <td><code>.text-right</code></td>
+                <td>Align text to the right</td>
+              </tr>
+              <tr>
+                <td><code>.text-muted</code></td>
+                <td>Muted/secondary text color</td>
+              </tr>
+              <tr>
+                <td><code>.text-primary</code></td>
+                <td>Primary brand color</td>
+              </tr>
+              <tr>
+                <td><code>.text-success</code></td>
+                <td>Success/positive color</td>
+              </tr>
+              <tr>
+                <td><code>.text-danger</code></td>
+                <td>Error/danger color</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="mt-4">Display Utilities</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.d-none</code></td>
+                <td>Hide element (display: none)</td>
+              </tr>
+              <tr>
+                <td><code>.d-block</code></td>
+                <td>Display as block</td>
+              </tr>
+              <tr>
+                <td><code>.d-inline</code></td>
+                <td>Display inline</td>
+              </tr>
+              <tr>
+                <td><code>.d-inline-block</code></td>
+                <td>Display inline-block</td>
+              </tr>
+              <tr>
+                <td><code>.d-flex</code></td>
+                <td>Enable flexbox</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        <a href="example-flexbox.html" class="btn btn-primary">View Flexbox Utilities</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

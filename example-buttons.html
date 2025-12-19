@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons - GitHub Theme</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/github-markdown-light.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Button Components</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="card mb-4">
+        <div class="card-body markdown-body">
+          <h1>Button Components</h1>
+          <p>Buttons are essential UI elements for user interactions. The GitHub Theme provides multiple button variants, sizes, and states to suit different needs.</p>
+
+          <h2>Available Classes</h2>
+          <ul>
+            <li><code>.btn</code> - Base button class (required)</li>
+            <li><code>.btn-primary</code> - Primary action button</li>
+            <li><code>.btn-secondary</code> - Secondary action button</li>
+            <li><code>.btn-success</code> - Success/confirmation button</li>
+            <li><code>.btn-danger</code> - Destructive/danger button</li>
+            <li><code>.btn-outline</code> - Outline style button</li>
+            <li><code>.btn-sm</code> - Small button</li>
+            <li><code>.btn-lg</code> - Large button</li>
+            <li><code>.btn-block</code> - Full-width button</li>
+          </ul>
+
+          <h2>Usage</h2>
+          <pre><code>&lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;
+&lt;a href="#" class="btn btn-secondary"&gt;Link Button&lt;/a&gt;
+&lt;button class="btn btn-primary btn-lg"&gt;Large Button&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Button Variants</h2>
+        <div class="card-body">
+          <p class="text-muted mb-3">Different button styles for different actions and contexts.</p>
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-outline">Outline</button>
+          <button class="btn btn-secondary" disabled>Disabled</button>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Button Sizes</h2>
+        <div class="card-body">
+          <p class="text-muted mb-3">Three size options to fit different UI contexts.</p>
+          <button class="btn btn-primary btn-sm">Small</button>
+          <button class="btn btn-primary">Default</button>
+          <button class="btn btn-primary btn-lg">Large</button>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Block Button</h2>
+        <div class="card-body">
+          <p class="text-muted mb-3">Full-width buttons that span the entire container.</p>
+          <button class="btn btn-primary btn-block">Full Width Primary Button</button>
+          <button class="btn btn-secondary btn-block">Full Width Secondary Button</button>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Button Groups</h2>
+        <div class="card-body">
+          <p class="text-muted mb-3">Combine buttons for toolbars and button groups.</p>
+          <div class="d-flex" style="gap: 8px;">
+            <button class="btn btn-secondary">Left</button>
+            <button class="btn btn-secondary">Middle</button>
+            <button class="btn btn-secondary">Right</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Buttons as Links</h2>
+        <div class="card-body">
+          <p class="text-muted mb-3">Button styles can be applied to anchor tags.</p>
+          <a href="#" class="btn btn-primary">Link as Primary Button</a>
+          <a href="#" class="btn btn-outline">Link as Outline Button</a>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Combined Sizes and Variants</h2>
+        <div class="card-body">
+          <h3>Small Buttons</h3>
+          <div class="mb-3">
+            <button class="btn btn-primary btn-sm">Primary</button>
+            <button class="btn btn-secondary btn-sm">Secondary</button>
+            <button class="btn btn-success btn-sm">Success</button>
+            <button class="btn btn-danger btn-sm">Danger</button>
+          </div>
+
+          <h3>Default Buttons</h3>
+          <div class="mb-3">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+          </div>
+
+          <h3>Large Buttons</h3>
+          <div class="mb-3">
+            <button class="btn btn-primary btn-lg">Primary</button>
+            <button class="btn btn-secondary btn-lg">Secondary</button>
+            <button class="btn btn-success btn-lg">Success</button>
+            <button class="btn btn-danger btn-lg">Danger</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Practical Examples</h2>
+        <div class="card-body">
+          <h3>Modal Actions</h3>
+          <div class="d-flex justify-content-end" style="gap: 8px; margin-bottom: 24px;">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-danger">Delete</button>
+          </div>
+
+          <h3>Form Actions</h3>
+          <div style="margin-bottom: 24px;">
+            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-secondary">Reset</button>
+            <button class="btn btn-outline">Cancel</button>
+          </div>
+
+          <h3>Call to Action</h3>
+          <div class="text-center" style="padding: 32px; background-color: #f6f8fa; border-radius: 6px;">
+            <h4>Ready to get started?</h4>
+            <p class="text-muted">Join thousands of users already using our platform.</p>
+            <button class="btn btn-primary btn-lg">Sign Up Now</button>
+            <button class="btn btn-outline btn-lg">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms - GitHub Theme</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/github-markdown-light.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Form Components</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="card mb-4">
+        <div class="card-body markdown-body">
+          <h1>Form Components</h1>
+          <p>Forms are essential for user input and interaction. The GitHub Theme provides styled form controls that are consistent, accessible, and easy to use.</p>
+
+          <h2>Available Classes</h2>
+          <ul>
+            <li><code>.form-group</code> - Container for form fields with proper spacing</li>
+            <li><code>.form-label</code> - Styled label for form inputs</li>
+            <li><code>.form-control</code> - Base input styling for text, email, textarea, etc.</li>
+          </ul>
+
+          <h2>Usage</h2>
+          <pre><code>&lt;div class="form-group"&gt;
+  &lt;label class="form-label" for="email"&gt;Email&lt;/label&gt;
+  &lt;input type="email" class="form-control" id="email" placeholder="your@email.com"&gt;
+&lt;/div&gt;</code></pre>
+
+          <h2>Best Practices</h2>
+          <ul>
+            <li>Always use <code>&lt;label&gt;</code> elements for accessibility</li>
+            <li>Associate labels with inputs using the <code>for</code> and <code>id</code> attributes</li>
+            <li>Provide helpful placeholder text</li>
+            <li>Use appropriate input types (email, password, number, etc.)</li>
+            <li>Include validation feedback when necessary</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Basic Form</h2>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" placeholder="Enter your message here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Input Types</h2>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="text-input">Text Input</label>
+              <input type="text" class="form-control" id="text-input" placeholder="Enter text">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email-input">Email Input</label>
+              <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="password-input">Password Input</label>
+              <input type="password" class="form-control" id="password-input" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="number-input">Number Input</label>
+              <input type="number" class="form-control" id="number-input" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="url-input">URL Input</label>
+              <input type="url" class="form-control" id="url-input" placeholder="https://example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="tel-input">Phone Input</label>
+              <input type="tel" class="form-control" id="tel-input" placeholder="+1 (555) 123-4567">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="date-input">Date Input</label>
+              <input type="date" class="form-control" id="date-input">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Textarea</h2>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="textarea-default">Default Textarea</label>
+              <textarea class="form-control" id="textarea-default" placeholder="Enter your text here..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="textarea-large">Large Textarea</label>
+              <textarea class="form-control" id="textarea-large" style="min-height: 150px;" placeholder="More space for longer content..."></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Form Layout with Grid</h2>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="John">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="form-label" for="emailAddress">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="john.doe@example.com">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-8">
+                <div class="form-group">
+                  <label class="form-label" for="address">Street Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="123 Main St">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <label class="form-label" for="zip">ZIP Code</label>
+                  <input type="text" class="form-control" id="zip" placeholder="12345">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Login Form Example</h2>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-md-6" style="margin: 0 auto;">
+              <form>
+                <div class="form-group">
+                  <label class="form-label" for="login-email">Email</label>
+                  <input type="email" class="form-control" id="login-email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="login-password">Password</label>
+                  <input type="password" class="form-control" id="login-password" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                  <label style="display: flex; align-items: center; font-weight: normal; cursor: pointer;">
+                    <input type="checkbox" style="margin-right: 8px;">
+                    Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                <div class="text-center mt-3">
+                  <a href="#">Forgot password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Registration Form Example</h2>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="reg-firstname">First Name</label>
+                  <input type="text" class="form-control" id="reg-firstname" placeholder="First name" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="reg-lastname">Last Name</label>
+                  <input type="text" class="form-control" id="reg-lastname" placeholder="Last name" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-email">Email</label>
+              <input type="email" class="form-control" id="reg-email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-username">Username</label>
+              <input type="text" class="form-control" id="reg-username" placeholder="Choose a username" required>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="reg-password">Password</label>
+                  <input type="password" class="form-control" id="reg-password" placeholder="Create password" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="reg-confirm">Confirm Password</label>
+                  <input type="password" class="form-control" id="reg-confirm" placeholder="Confirm password" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label style="display: flex; align-items: start; font-weight: normal; cursor: pointer;">
+                <input type="checkbox" style="margin-right: 8px; margin-top: 4px;" required>
+                <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Contact Form Example</h2>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Your Name</label>
+                  <input type="text" class="form-control" id="contact-name" placeholder="John Doe">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Your Email</label>
+                  <input type="email" class="form-control" id="contact-email" placeholder="john@example.com">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input type="text" class="form-control" id="contact-subject" placeholder="How can we help?">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea class="form-control" id="contact-message" style="min-height: 120px;" placeholder="Tell us more about your inquiry..."></textarea>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="text-muted mb-0" style="font-size: 14px;">We'll respond within 24 hours</p>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Form with Validation Feedback</h2>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label class="form-label" for="valid-email">Email</label>
+              <input type="email" class="form-control" id="valid-email" placeholder="your@email.com" value="invalid-email">
+              <div class="alert alert-danger" style="margin-top: 8px; padding: 8px 12px; font-size: 14px;">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="valid-password">Password</label>
+              <input type="password" class="form-control" id="valid-password" placeholder="Password" value="abc">
+              <div class="alert alert-danger" style="margin-top: 8px; padding: 8px 12px; font-size: 14px;">
+                Password must be at least 8 characters long.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="valid-username">Username</label>
+              <input type="text" class="form-control" id="valid-username" placeholder="Username" value="john_doe">
+              <div class="alert alert-success" style="margin-top: 8px; padding: 8px 12px; font-size: 14px;">
+                Username is available!
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Search Form</h2>
+        <div class="card-body">
+          <form>
+            <div class="d-flex" style="gap: 8px;">
+              <input type="search" class="form-control" placeholder="Search..." style="flex: 1;">
+              <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 class="card-header">Inline Form</h2>
+        <div class="card-body">
+          <form>
+            <div class="d-flex align-items-end" style="gap: 8px; flex-wrap: wrap;">
+              <div class="form-group" style="margin-bottom: 0; flex: 1; min-width: 200px;">
+                <label class="form-label" for="inline-email">Email</label>
+                <input type="email" class="form-control" id="inline-email" placeholder="your@email.com">
+              </div>
+              <div class="form-group" style="margin-bottom: 0; flex: 1; min-width: 200px;">
+                <label class="form-label" for="inline-password">Password</label>
+                <input type="password" class="form-control" id="inline-password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
