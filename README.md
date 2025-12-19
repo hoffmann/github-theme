@@ -13,6 +13,8 @@ A simple, clean, and responsive CSS theme inspired by GitHub's design language. 
 - **CSS Variables** - Easy theming and customization
 - **Lightweight** - No JavaScript dependencies, pure CSS
 
+Visit [hoffmann.github.io/github-theme/](https://hoffmann.github.io/github-theme/) to see some example pages with the components.
+
 ## Quick Start
 
 ### 1. Include the CSS Files
@@ -291,8 +293,7 @@ github-theme/
 ├── example-grid.html                # Grid system examples
 ├── example-flexbox.html             # Flexbox utility examples
 ├── example-markdown.html            # Markdown styling examples
-├── example-utilities.html           # Utility class examples
-└── index.md                         # This file
+└── example-utilities.html           # Utility class examples
 ```
 
 ## License
@@ -304,7 +305,3 @@ MIT License - Feel free to use in your projects.
 - Markdown styles from [GitHub's official markdown CSS](https://github.com/sindresorhus/github-markdown-css)
 - Design inspired by GitHub's interface
 - Built with modern CSS (Flexbox, CSS Variables)
-
----
-
-**Get Started:** Browse the [example files](example-buttons.html) to see all components in action!
