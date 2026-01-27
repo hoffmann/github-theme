@@ -49,6 +49,13 @@ body {
   max-width: 1400px;
 }
 
+/* Reduce container padding on smaller screens */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 8px;
+  }
+}
+
 /* Header */
 .header {
   background-color: var(--color-text);
